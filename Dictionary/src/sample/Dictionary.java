@@ -23,8 +23,8 @@ import java.util.*;
 
 public class Dictionary extends Application {
 
-  private static final String DATA_FILE_PATH =
-      "C:\\Users\\ASUS\\IdeaProjects\\Dictionary\\src\\sample\\E_V.txt";
+    private static final String DATA_FILE_PATH =
+            "C:\\Users\\ASUS\\IdeaProjects\\Dictionary\\src\\sample\\E_V.txt";
     private static final String FXML_FILE_PATH;
 
     static {
@@ -45,8 +45,6 @@ public class Dictionary extends Application {
     static ArrayList<Pair<String, String>> list2 = new ArrayList<>();
     static String wordtofind;
     static String iftodoanything;
-
-
 
 
     @Override
@@ -91,6 +89,7 @@ public class Dictionary extends Application {
         Collections.sort(sort);
 
         for(int i =0;i< sort.size();i++) {
+
 
             this.listView.getItems().add(sort.get(i));}
 
@@ -171,7 +170,6 @@ public class Dictionary extends Application {
 
         }
 
-
     }
 
 
@@ -194,12 +192,14 @@ public class Dictionary extends Application {
             Word word = new Word(list1.get(i).getKey(),list1.get(i).getValue());
             data.put(list1.get(i).getKey(),word);
         }
-        for(int i =0;i < list.size();i++) {
-            data.remove(list.get(i));}
+
 
         for(int i=0;i < list2.size();i++) {
             Fixdatawithword(list2.get(i).getKey(),list2.get(i).getValue());
         }
+
+        for(int i =0;i < list.size();i++) {
+            data.remove(list.get(i));}
 
         loadWordList();
 
@@ -221,8 +221,7 @@ public class Dictionary extends Application {
 
         readData();
 
-        for(int i =0;i < list.size();i++) {
-            data.remove(list.get(i));}
+
         for(int i =0;i < list1.size();i++) {
             Word word = new Word(list1.get(i).getKey(),list1.get(i).getValue());
             data.put(list1.get(i).getKey(),word);
@@ -232,13 +231,15 @@ public class Dictionary extends Application {
             Fixdatawithword(list2.get(i).getKey(),list2.get(i).getValue());
         }
 
+        for(int i =0;i < list.size();i++) {
+            data.remove(list.get(i));}
+
         loadWordList();
 
     }
 
     public void Search(ActionEvent event) throws IOException {
 
-        
 
         Parent root = FXMLLoader.load(getClass().getResource("/sample/Dictionary_Main.fxml"));
         Scene scene = new Scene(root);
@@ -259,16 +260,25 @@ public class Dictionary extends Application {
             if(list1.get(i).getKey().equals(wordtofind)) {
                 data.put(list1.get(i).getKey(), word);
             }
+
         }
+
+
+        for(int i=0;i < list2.size();i++) {
+            Fixdatawithword(list2.get(i).getKey(),list2.get(i).getValue());
+        }
+
 
         for(int i =0;i < list.size();i++) {
             data.remove(list.get(i));
         }
 
+
         loadWordList();
     }
 
     public void FixData(ActionEvent event) throws IOException {
+
 
         Parent root = FXMLLoader.load(getClass().getResource("/sample/Dictionary_Main.fxml"));
         Scene scene = new Scene(root);
@@ -283,18 +293,19 @@ public class Dictionary extends Application {
 
         readData();
 
-        for (int i =0;i < list.size();i++) {
-            data.remove(list.get(i));
-        }
-        for (int i =0;i < list1.size();i++) {
+        for(int i =0;i < list1.size();i++) {
             Word word = new Word(list1.get(i).getKey(),list1.get(i).getValue());
             data.put(list1.get(i).getKey(),word);
 
         }
 
-        for (int i=0;i < list2.size();i++) {
+        for(int i=0;i < list2.size();i++) {
             Fixdatawithword(list2.get(i).getKey(),list2.get(i).getValue());
         }
+
+        for(int i =0;i < list.size();i++) {
+            data.remove(list.get(i));}
+
 
         loadWordList();
 
@@ -319,22 +330,21 @@ public class Dictionary extends Application {
 
         ListViewUpdate(arg,num);
 
-        for (int i =0;i < list1.size();i++) {
+        for(int i =0;i < list1.size();i++) {
             Word word = new Word(list1.get(i).getKey(),list1.get(i).getValue());
             data.put(list1.get(i).getKey(),word);
         }
-        for (int i =0;i < list.size();i++) {
-            data.remove(list.get(i));
-        }
 
-        for (int i=0;i < list2.size();i++) {
+        for(int i=0;i < list2.size();i++) {
             Fixdatawithword(list2.get(i).getKey(),list2.get(i).getValue());
         }
+
+        for(int i =0;i < list.size();i++) {
+            data.remove(list.get(i));}
 
         initComponents(scene);
 
         loadWordList();
-
 
     }
 }
@@ -349,22 +359,18 @@ class Word {
     }
 
     public String getWord() {
-
         return word;
     }
 
     public void setWord(String word) {
-
         this.word = word;
     }
 
     public String getDef() {
-
         return def;
     }
 
     public void setDef(String def) {
-
         this.def = def;
     }
 }
