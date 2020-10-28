@@ -1,12 +1,14 @@
 # Dictionary
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/62632918/97454980-eccc3b00-1969-11eb-912b-287eda62ad0c.gif)
  
 A translator by Thượng & Tùng.
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/62632918/97454980-eccc3b00-1969-11eb-912b-287eda62ad0c.gif)
+
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Setup](#setup) 
+ 
  
 ## General info
 This is a English-VietNamese Dictionary Application opensources written by Java and JavaFX, this application also using Google Translate API TTS(Text to Speech) to helps user can pronunc the word.
