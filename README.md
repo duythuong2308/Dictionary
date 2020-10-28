@@ -1,6 +1,7 @@
 # Dictionary
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/62632918/97454980-eccc3b00-1969-11eb-912b-287eda62ad0c.gif)
  
-# LoKaTranslate
 A translator by Thượng & Tùng.
 ## Table of contents
 * [General info](#general-info)
@@ -21,7 +22,7 @@ To run this project, dowload the all the repository it locally using IntelliJ ID
 2. Go to File -> Project Structure. Select Libraries then Click the Add(+) icon and add this 2 libraries: gtranslateapi-1.0.jar and jl1.0.jar in texttospeech Folder.
 3. Extract 2 data base .txt file in the zip to get  the English-VietNamese
 Note: All the images is stored in file [image] So you will need to change the link to the image which the codes need to execute without error. 
-# VietNamese Below:
+
 # Dictionary
 Từ điện điện tử thiết kế bởi Thượng và Tùng.
 ## Table of contents
@@ -30,7 +31,7 @@ Từ điện điện tử thiết kế bởi Thượng và Tùng.
 * [Cài đặt](#setup)
  
 ## General info
-Đây là dự án bài tập lớn trong môn học OOP ĐH Công nghệ-Uet.
+Đây là bài tập lớn số 1 trong môn học OOP ĐH Công nghệ-Uet.
  
 ## Technologies
 Ứng dụng sử dụng thư viện giao diện đồ họa JavaFX:
