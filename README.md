@@ -44,4 +44,4 @@ Từ điện điện tử thiết kế bởi Thượng và Tùng.
 1. Tải xuống JavaFx trên sau đó xem link hướng dẫn: https://www.jetbrains.com/help/idea/javafx.html#troubleshoot để có thể thêm thư viện giao diện đồ họa thành công cho IntelliJ IDEA.
 2. Chuột trái vào File -> Project Structure. Chọn Libraries sau đó nhấn nút Add(+) và thêm 2 thư viện API của Google translate TTS vào: gtranslateapi-1.0.jar and jl1.0.jar.
 3. Giải nén 2 file dữ liệu từ điện có đuôi .txt để lấy dữ liệu từ điển anh-việt
-Note: Tất cả ảnh mà ứng dụng cần dùng ở trong file [image] Bạn cần phải đặt đúng đường dẫn đến ảnh mà những dòng code gọi đến để chạy thành công. 
+Note: Tất cả ảnh mà ứng dụng cần dùng là 2 file .png. Bạn cần phải đặt đúng đường dẫn đến ảnh mà những dòng code gọi đến để chạy thành công. 
