@@ -1,7 +1,12 @@
 # Dictionary
  
 A translator by Thượng & Tùng.
+
+
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62632918/97454980-eccc3b00-1969-11eb-912b-287eda62ad0c.gif)
+
+
 
 
 ## Table of contents
