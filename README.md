@@ -28,7 +28,7 @@ To run this project, dowload the all the repository it locally using IntelliJ ID
 1. Dowload the above JavaFX SDK and see this link: https://www.jetbrains.com/help/idea/javafx.html#troubleshoot to see How to add JavaFX library into your IntelliJ IDEA.
 2. Go to File -> Project Structure. Select Libraries then Click the Add(+) icon and add this 2 libraries: gtranslateapi-1.0.jar and jl1.0.jar in texttospeech Folder.
 3. Extract 2 data base .txt file in the zip to get  the English-VietNamese
-Note: All the images is stored in file [image] So you will need to change the link to the image which the codes need to execute without error. 
+Note: All the images is file with .png. So you will need to change the link to the image which the codes need to execute without error. 
 
 # Dictionary
 Từ điện điện tử thiết kế bởi Thượng và Tùng.
